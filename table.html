@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+  <link rel="stylesheet" href="assets/css/normalize.css">
+  <link rel="stylesheet" href="assets/css/turkey.css">
+  <link rel="stylesheet" href="assets/js/turkey.js">
+
+  <link rel="stylesheet" href="assets/css/tablesaw.css">
+  <script src="assets/js/tablesaw.js"></script>
+  <script src="assets/js/tablesaw-init.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css"></script>
+
+  <script>
+    $('.accordian-body').on('show.bs.collapse', function () {
+    $(this).closest("table")
+        .find(".collapse.in")
+        .not(this)
+        .collapse('toggle')
+      })
+  </script>
+
+  <style>
+  .table tr {
+    cursor: pointer;
+  }
+  .hiddenRow {
+      margin-left: 20px;
+      padding: 0 4px !important;
+      background-color: #eeeeee;
+      font-size: 18px;
+  }
+  </style>
+
+  <html xmlns="http://www.w3.org/1999/xhtml"
+	      xmlns:og="http://ogp.me/ns#"/>
+
+  <title>
+	Ignus Pahal
+  </title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="profile-card js-profile-card">
+      <div class="profile-card__cnt js-profile-cnt">
+        <div class="profile-card__name">Mission Prerna</div>
+        <div class="profile-card__txt">Samagra Shiksha – <strong>Uttar Pradesh</strong></div>
+
+    <div class="docs-main">
+  		<h2>Sortable Table</h2>
+  		<h3 class="docs">Default appearance (with optional sortable-switch)</h3>
+
+  		<table class="tablesaw table table-condensed" data-tablesaw-sortable style="border-collapse:collapse;">
+  			<thead>
+  				<tr>
+  					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="persist">Movie Title</th>
+  					<th scope="col" data-tablesaw-sortable-col data-tablesaw-sortable-default-col data-tablesaw-priority="3">Rank</th>
+  					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="2">Year</th>
+  					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="1">Not Natural</th>
+  					<th id="custom-sort" scope="col" data-tablesaw-sortable-col data-tablesaw-priority="4">Natural</th>
+  				</tr>
+  			</thead>
+  			<tbody>
+  				<tr data-toggle="collapse" data-target="#demo1" class="accordion-toggle">
+  					<td class="title"><a href="http://en.wikipedia.org/wiki/Avatar_(2009_film)">Avatar</a></td>
+  					<td>1</td>
+  					<td>2009/11</td>
+  					<td>test 1</td>
+  					<td>test 1</td>
+        </tr>
+  				</tr>
+  				<tr data-toggle="collapse" data-target="#demo1" class="accordion-toggle">
+  					<td class="title"><a href="http://en.wikipedia.org/wiki/Titanic_(1997_film)">Titanic</a></td>
+  					<td>2</td>
+  					<td>1997/12</td>
+  					<td>test 2</td>
+  					<td>test 2</td>
+        </tr>
+  				</tr>
+  				<tr data-toggle="collapse" data-target="#demo1" class="accordion-toggle">
+  					<td class="title"><a href="http://en.wikipedia.org/wiki/The_Avengers_(2012_film)">The Avengers</a></td>
+  					<td>3</td>
+  					<td>2012/3</td>
+  					<td>test 10</td>
+  					<td>test 10</td>
+        </tr>
+  				</tr>
+  			</tbody>
+  		</table>
+
+  	</div>
+
+    <p id="bottom-text"> Last Modified: 14 October 2019, 01:55 PM </p>
+
+  </div>
+</div>
+</div>
+
+</body>
+
+</html>
