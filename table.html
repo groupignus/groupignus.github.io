@@ -11,6 +11,9 @@
   <link rel="stylesheet" href="assets/css/turkey.css">
   <link rel="stylesheet" href="assets/js/turkey.js">
 
+  <!-- <link rel="stylesheet" href="assets/css/responsive-tables.css">
+  <link rel="stylesheet" href="assets/js/responsive-tables.js"> -->
+
   <link rel="stylesheet" href="assets/css/tablesaw.css">
   <script src="assets/js/tablesaw.js"></script>
   <script src="assets/js/tablesaw-init.js"></script>
@@ -18,27 +21,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css"></script>
-
-  <script>
-    $('.accordian-body').on('show.bs.collapse', function () {
-    $(this).closest("table")
-        .find(".collapse.in")
-        .not(this)
-        .collapse('toggle')
-      })
-  </script>
-
-  <style>
-  .table tr {
-    cursor: pointer;
-  }
-  .hiddenRow {
-      margin-left: 20px;
-      padding: 0 4px !important;
-      background-color: #eeeeee;
-      font-size: 18px;
-  }
-  </style>
 
   <html xmlns="http://www.w3.org/1999/xhtml"
 	      xmlns:og="http://ogp.me/ns#"/>
@@ -52,54 +34,1344 @@
   <div class="wrapper">
     <div class="profile-card js-profile-card">
       <div class="profile-card__cnt js-profile-cnt">
-        <div class="profile-card__name">Mission Prerna</div>
+        <a href="./testing.html"> <div class="profile-card__name">Mission Prerna</div> </a>
         <div class="profile-card__txt">Samagra Shiksha – <strong>Uttar Pradesh</strong></div>
 
-    <div class="docs-main">
-  		<h2>Sortable Table</h2>
-  		<h3 class="docs">Default appearance (with optional sortable-switch)</h3>
-
-  		<table class="tablesaw table table-condensed" data-tablesaw-sortable style="border-collapse:collapse;">
-  			<thead>
-  				<tr>
-  					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="persist">Movie Title</th>
-  					<th scope="col" data-tablesaw-sortable-col data-tablesaw-sortable-default-col data-tablesaw-priority="3">Rank</th>
-  					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="2">Year</th>
-  					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="1">Not Natural</th>
-  					<th id="custom-sort" scope="col" data-tablesaw-sortable-col data-tablesaw-priority="4">Natural</th>
-  				</tr>
-  			</thead>
-  			<tbody>
-  				<tr data-toggle="collapse" data-target="#demo1" class="accordion-toggle">
-  					<td class="title"><a href="http://en.wikipedia.org/wiki/Avatar_(2009_film)">Avatar</a></td>
-  					<td>1</td>
-  					<td>2009/11</td>
-  					<td>test 1</td>
-  					<td>test 1</td>
-        </tr>
-  				</tr>
-  				<tr data-toggle="collapse" data-target="#demo1" class="accordion-toggle">
-  					<td class="title"><a href="http://en.wikipedia.org/wiki/Titanic_(1997_film)">Titanic</a></td>
-  					<td>2</td>
-  					<td>1997/12</td>
-  					<td>test 2</td>
-  					<td>test 2</td>
-        </tr>
-  				</tr>
-  				<tr data-toggle="collapse" data-target="#demo1" class="accordion-toggle">
-  					<td class="title"><a href="http://en.wikipedia.org/wiki/The_Avengers_(2012_film)">The Avengers</a></td>
-  					<td>3</td>
-  					<td>2012/3</td>
-  					<td>test 10</td>
-  					<td>test 10</td>
-        </tr>
-  				</tr>
+        <h2> SRG Rating </h2>
+    <div>
+  		<table class="tablesa " data-tablesaw-sortable data-tablesaw-mode="swipe" data-tablesaw-minimap data-tablesaw-no-touch>
+        				<thead>
+        					<tr>
+        						<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="persist">Given Name</th>
+        						<th scope="col" data-tablesaw-sortable-col data-tablesaw-sortable-default-col data-tablesaw-priority="1">District</th>
+        						<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="2">School Name</th>
+        						<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="3">Contact No.</th>
+        						<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="4">Rating</th>
+        						<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="4">Group Membership</th>
+        					</tr>
+        				</thead>
+        				<tbody>
+        					<tr>
+        						<td>Meena Kumari</td>
+        						<td>Agra</td>
+        						<td>AT, JHS Khera Garh-1</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Priti Singh</td>
+        						<td>Agra</td>
+        						<td>AT, UPS Garhijagannath</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Anurag Sharma</td>
+        						<td>Agra</td>
+        						<td>AT, UPS Bhara</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Sanjeev Kumar Sharma</td>
+        						<td>Aligarh</td>
+        						<td>AT, UPS Rajmargpur Atrauli</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Dr. Anil Kumar Raghav</td>
+        						<td>Aligarh</td>
+        						<td>AT, UPS Sihani Faridpur</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Smt. Anuj Kumari</td>
+        						<td>Aligarh</td>
+        						<td>AT, UPS Dawathala</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Sweta Singh</td>
+        						<td>Ambedkar Nagar</td>
+        						<td>ABRC, BRC Jalalpur</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Dr. Vijay Chandra Mishra</td>
+        						<td>Ambedkar Nagar</td>
+        						<td>HT, PS Shukulpatti Katehri</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Harishyam Tiwari</td>
+        						<td>Ambedkar Nagar</td>
+        						<td>AT, UPS Harsinghpur</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Anamika Sarkar</td>
+        						<td>Amethi</td>
+        						<td>AT, Model Primary School Mahmadpur-1</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Amita</td>
+        						<td>Amethi</td>
+        						<td>AT, UPS Patipur</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Hema Tiwari</td>
+        						<td>Amroha</td>
+        						<td>HT, PS Amheda</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Anil Kumar</td>
+        						<td>Amroha</td>
+        						<td>AT, UPS Kailbakri</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Divya Mishra</td>
+        						<td>Auraiya</td>
+        						<td>HT, PS Dahiyapur</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Ambikesh Tripathi</td>
+        						<td>Ayodhya</td>
+        						<td>AT, UPS Takminganj</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Amit Kumar Mishra</td>
+        						<td>Ayodhya</td>
+        						<td>ABRC, BRC Pura</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Smt. Seema Rajan</td>
+        						<td>Badaun</td>
+        						<td>HT, PS Daharpur Kalan</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Piyush Kumar</td>
+        						<td>Badaun</td>
+        						<td>ABRC, BRC Bisauli</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Shiv Kumar Chaudhry</td>
+        						<td>Bahraich</td>
+        						<td>AT, PS Tendwa</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Manoj Kumar</td>
+        						<td>Bahraich</td>
+        						<td>AT, PS Maikupurva</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Sudheer Mehrotra</td>
+        						<td>Bahraich</td>
+        						<td>AT, PS Gujauli Khurd</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Ashutosh Kumar Singh Tomar</td>
+        						<td>Ballia</td>
+        						<td>AT, UPS Parvat Pur</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Santosh Chand Tiwari</td>
+        						<td>Ballia</td>
+        						<td>AT, UPS Sarangpur</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Mahmudul Haque</td>
+        						<td>Balrampur</td>
+        						<td>AT, Shiksha Shetra Balrampur</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Alok Kumar Sharma</td>
+        						<td>Balrampur</td>
+        						<td>AT, Shiksha Shetra Tulsipur</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Pratima Singh</td>
+        						<td>Balrampur</td>
+        						<td>HT, PS Dhusah-1, Shikcha Shetra Balrampur</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Dr. Saurabh Arya</td>
+        						<td>Banda</td>
+        						<td>AT, UPS Paduyi</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Shashank Shekhar Mishra</td>
+        						<td>Banda</td>
+        						<td>AT, UPS Barsada Bujurg</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Rishi Tandon</td>
+        						<td>Barabanki</td>
+        						<td>AT, UPS Satrikh</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Rahul Kumar Shukla</td>
+        						<td>Barabanki</td>
+        						<td>ABRC, BRC Haidergarh</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Awdesh Kumar Pandey</td>
+        						<td>Barabanki</td>
+        						<td>HT, UPS Karpiya</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Dr. Anil Kumar Chaubey</td>
+        						<td>Bareilly</td>
+        						<td>AT, UPS Khandaua</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Dharamvir</td>
+        						<td>Bareilly</td>
+        						<td>AT, UPS Hafijganj</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Dr. Laxmi Shukla</td>
+        						<td>Bareilly</td>
+        						<td>HT, PS Faridpur Inayat Khan</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Ashish Kumar Srivastav</td>
+        						<td>Basti</td>
+        						<td>AT, UPS Baheriya Saltaua</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Sarvest Mishra</td>
+        						<td>Basti</td>
+        						<td>HT, PS Mudhghat</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Angad Pandey</td>
+        						<td>Basti</td>
+        						<td>HT, PS Asiyapar Duhari Bankati</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Dhiraj Singh</td>
+        						<td>Bhadohi</td>
+        						<td>HT, PS Fattupur</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Manik Chandra</td>
+        						<td>Bhadohi</td>
+        						<td>AT, UPS Gyanpur</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Arun Kumar Jinghal</td>
+        						<td>Bijnor</td>
+        						<td>AT, UPS Fajalpur</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Dr Akash Agrwal</td>
+        						<td>Bijnor</td>
+        						<td>HT, PS Dara Nagar</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Dushyant Kumar</td>
+        						<td>Bijnor</td>
+        						<td>ABRC, BRC Devmal</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Sachin Kumar Gupta</td>
+        						<td>Bulandshahr</td>
+        						<td>AT, UPS Saidpur</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Sanjeev Kumar Gaur</td>
+        						<td>Bulandshahr</td>
+        						<td>AT, UPS Dhamrawali</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Lokesh Kumar</td>
+        						<td>Bulandshahr</td>
+        						<td>HT, PS Alouda</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Jai Prakash Yadav</td>
+        						<td>Chandauli</td>
+        						<td>ABRC, Sakaldiha</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Anita Kumari</td>
+        						<td>Chandauli</td>
+        						<td>ABRC, Niyamtabad</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Geet Shrivastav</td>
+        						<td>Chitrakoot</td>
+        						<td>HT, PS Rauli</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Abhisek Singh</td>
+        						<td>Chitrakoot</td>
+        						<td>AT, PS Raipura</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Harishchandra</td>
+        						<td>Chitrakoot</td>
+        						<td>HT, PS Ranipukhaki</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Upendra Kumar Upadhyay</td>
+        						<td>Deoria</td>
+        						<td>HT, PS Nadauli</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Bipin Kumar</td>
+        						<td>Etah</td>
+        						<td>AT, UPS Ahmadpur Kalan</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Neeraj Kumar</td>
+        						<td>Etah</td>
+        						<td>HT, PS Maligaon</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Preeti Gaur</td>
+        						<td>Etah</td>
+        						<td>AT, UPS Kosma</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Sanjeev Chaturvedi</td>
+        						<td>Etawah</td>
+        						<td>AT, UPS Kursena</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Manisha Mishra</td>
+        						<td>Farrukhabad</td>
+        						<td>AT, UPS Bholepur</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Yaduraj Singh Pal</td>
+        						<td>Farrukhabad</td>
+        						<td>AT, UPS</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Jay Chandra Pandey</td>
+        						<td>Fatehpur</td>
+        						<td>ABRC, BRC Araya</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Akhilesh Singh</td>
+        						<td>Fatehpur</td>
+        						<td>HT, PS Barayi Khurd</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Rajesh Tripathi</td>
+        						<td>Fatehpur</td>
+        						<td>ABRC, UERC Nagarkshetra</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Smt. Jaya Sharma</td>
+        						<td>Firozabad</td>
+        						<td>HT, PS Sirauliya</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Akansha Saxena</td>
+        						<td>Gautam Buddha Nagar</td>
+        						<td>AT, UPS Agahpur</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Rashmi Tripathi</td>
+        						<td>Gautam Buddha Nagar</td>
+        						<td>AT, UPS Badauli Bangar</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Ashok Kumar</td>
+        						<td>Gautam Buddha Nagar</td>
+        						<td>HT, PS Samaspur</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Vanita Tyagi</td>
+        						<td>Ghaziabad</td>
+        						<td>AT, PS Ballabhgarhi</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Poonam Sharma</td>
+        						<td>Ghaziabad</td>
+        						<td>ABRC, BRC Rajapur</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Devankur</td>
+        						<td>Ghaziabad</td>
+        						<td>ABRCC, Muradnagar</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Hari Om Pratap Yadav</td>
+        						<td>Ghazipur</td>
+        						<td>AT, PS Dhamraw</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Krishna Bihari Lal</td>
+        						<td>Gonda</td>
+        						<td>HT, UPS Trilokpur</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Kamlesh Kumar Pandey</td>
+        						<td>Gonda</td>
+        						<td>ABRC, BRC</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Rakesh Kumar Dube</td>
+        						<td>Gorakhpur</td>
+        						<td>HT, PS Sanjhayi</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Ramesh Kumar Pandey</td>
+        						<td>Gorakhpur</td>
+        						<td>AT, UPS Vimuti</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Brajesh Nath Tiwari</td>
+        						<td>Gorakhpur</td>
+        						<td>HT, PS Shripura</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Bharat Sharma</td>
+        						<td>Hapur</td>
+        						<td>ABRC, BRC Hapur</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Alka Chauhan</td>
+        						<td>Hapur</td>
+        						<td>AT, PS Nidhawali</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Shivam Sharma</td>
+        						<td>Hardoi</td>
+        						<td>AT, PS Bharawan-1</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Dr. Abhay Jain</td>
+        						<td>Hardoi</td>
+        						<td>HT, PS Bariya Purva</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Radheshyam</td>
+        						<td>Hardoi</td>
+        						<td>AT, PS Kalyan Man</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Rajpal Singh</td>
+        						<td>Hathras</td>
+        						<td>ABRC, BRC Hatisa</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Arvind Chaturvedi</td>
+        						<td>Hathras</td>
+        						<td>ABRC, BRC Sasni</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Lokesh Pal</td>
+        						<td>Jalaun</td>
+        						<td>AT, UPS Ninawali</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Ashish Kumar Tiwari</td>
+        						<td>Jalaun</td>
+        						<td>AT, UPS Jaitpura</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Kamlesh Kumar Yadav</td>
+        						<td>Jaunpur</td>
+        						<td>AT, UPS Uttargawan</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Dr. Akhilesh Singh</td>
+        						<td>Jaunpur</td>
+        						<td>AT, UPS Rasulpoor</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Pushpendra Kumar Tiwari</td>
+        						<td>Jhansi</td>
+        						<td>ABRC, UPS Ranguwa</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Pradeep Kumar Yadav</td>
+        						<td>Jhansi</td>
+        						<td>HT, PS Dagariyarund</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Dharmendra Kumar</td>
+        						<td>Jhansi</td>
+        						<td>ABRCC/HT, PS Nandpura</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Amit Kumar Mishra</td>
+        						<td>Kannauj</td>
+        						<td>HT, PS Dadaura</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Vikas Kumari Dixit</td>
+        						<td>Kannauj</td>
+        						<td>AT, UPS Samdhan</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Sanjeev Kumar Katiyar</td>
+        						<td>Kannauj</td>
+        						<td>AT, PS Sengar Mau</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Ajay Kumar Gupta</td>
+        						<td>Kanpur Dehat</td>
+        						<td>HT, PS Mahkapur</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Sant Kumar Dixit</td>
+        						<td>Kanpur Dehat</td>
+        						<td>HT, PS Raniya</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Anant Trivedi</td>
+        						<td>Kanpur Dehat</td>
+        						<td>HT, PS Bichhiyapur</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Alka Gupta</td>
+        						<td>Kanpur Nagar</td>
+        						<td>HT, PS Bagla Bhru</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Sonia Malhotra</td>
+        						<td>Kanpur Nagar</td>
+        						<td>AT, UPS Sirhi</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Rajesh Yadav</td>
+        						<td>Kanpur Nagar</td>
+        						<td>AT, UPS Aimanpur</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Yogesh Kumar Kushwaha</td>
+        						<td>Kanshiram Nagar</td>
+        						<td>AT, PS Hussain Pur</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Om Prakash Singh</td>
+        						<td>Kaushambi</td>
+        						<td>HT, PS Umrachha</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Dilip Kumar Tiwari</td>
+        						<td>Kaushambi</td>
+        						<td>AT, UPS Jugrajpur</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Nageshwar Dubey</td>
+        						<td>Kushinagar</td>
+        						<td>HT, PS Shankar Patkhauli</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Shakuntla Kushwaha</td>
+        						<td>Lalitpur</td>
+        						<td>HT, PS Budwar-2</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Dr. Deepa Sindhi</td>
+        						<td>Lalitpur</td>
+        						<td></td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Preeti Singh</td>
+        						<td>Lucknow</td>
+        						<td>AT, PS Ganeshpur</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Chhama Singh</td>
+        						<td>Lucknow</td>
+        						<td>AT, UPS Kanya Bijnor</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Seema Dwivedi</td>
+        						<td>Lucknow</td>
+        						<td>HT, PS Devisingh</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Krishna Mohan Patel</td>
+        						<td>Maharajganj</td>
+        						<td>AT, PS Balua Partawal</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Satya Prakash Verma</td>
+        						<td>Maharajganj</td>
+        						<td>AT, PS Badahararani</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Suresh Kumar Soni</td>
+        						<td>Mahoba</td>
+        						<td>HT, UPS Singhan Pur</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Jitendra Kumar Batham</td>
+        						<td>Mainpuri</td>
+        						<td>ABRC, BRC Kuravali</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Ranjana Srivastav</td>
+        						<td>Mathura</td>
+        						<td>HT, PS Bakal Pur</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Amit Kumar</td>
+        						<td>Mathura</td>
+        						<td>AT, UPS Saurguddar</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Arvind Pandey</td>
+        						<td>Mau</td>
+        						<td>AT, UPS Kurthijafarpur</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Neelam</td>
+        						<td>Meerut</td>
+        						<td>HT, PS Rasoolpur, Muradnagar</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Poonam Rana</td>
+        						<td>Meerut</td>
+        						<td>AT, UPS Rali Chauhan</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Neeraj Singh</td>
+        						<td>Meerut</td>
+        						<td>HT, PS Hasanpur</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Sanjay Neelam</td>
+        						<td>Mirzapur</td>
+        						<td>AT, UPS Dewari</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Sarita Tiwari</td>
+        						<td>Mirzapur</td>
+        						<td>AT, UPS Kunda Deeh</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Vishal Singh</td>
+        						<td>Moradabad</td>
+        						<td>AT, UPS Sataran</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Sachin Shukla</td>
+        						<td>Moradabad</td>
+        						<td>AT, UPS Jaitiya Sadullapur</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Ritu Tyagi</td>
+        						<td>Moradabad</td>
+        						<td>AT, UPS Mora Malik</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Vinit Kumar</td>
+        						<td>Muzaffarnagar</td>
+        						<td>AT, PS Sawtu</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Usha Bahan</td>
+        						<td>Muzaffarnagar</td>
+        						<td>HT, PS Jaibhag Ban Pur</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Rashmi Mishra</td>
+        						<td>Muzaffarnagar</td>
+        						<td>HT, PS Sikheda</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Vaibhav Jaiswar</td>
+        						<td>Pilibhit</td>
+        						<td>AT, UPS Kainch</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Ashish Kumar Mishra</td>
+        						<td>Pilibhit</td>
+        						<td>AT, UPS Bahadurpur</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Amit Pathak</td>
+        						<td>Pilibhit</td>
+        						<td>AT, UPS Guldiya</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Chandra Jeet Yadav</td>
+        						<td>Pratapgarh</td>
+        						<td>AT, UPS Ramdas Patti</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Sweta Singh</td>
+        						<td>Pratapgarh</td>
+        						<td>AT, Mandal PS Ganeshpur</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Prashant Kumar Ojha</td>
+        						<td>Prayagraj</td>
+        						<td>ABRC, BRC Phoolpur</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Sunil Kumar Tiwari</td>
+        						<td>Prayagraj</td>
+        						<td>ABRC, BRC Jasra</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Vandna Srivastav</td>
+        						<td>Prayagraj</td>
+        						<td>HT, PS Anandwa</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Abhiwaik Kumar Srivastava, Lecturer, DIET</td>
+        						<td>Rae Bareli</td>
+        						<td></td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Sunil Kumar Yadav</td>
+        						<td>Rae Bareli</td>
+        						<td>ABRC, BRC Gaura</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Shailendra Kumar Singh</td>
+        						<td>Rae Bareli</td>
+        						<td>AT, PS Puresabha</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Pradeep Bhatnagar</td>
+        						<td>Rampur</td>
+        						<td>AT, PS Bheetargaon</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Sarfaraz Ahmad</td>
+        						<td>Rampur</td>
+        						<td>AT, UPS Mangupura Saidnagar</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Tarachand</td>
+        						<td>Rampur</td>
+        						<td>HT, UPS Kothra Malik</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Kapil Dua</td>
+        						<td>Saharanpur</td>
+        						<td>ABRC,Puwarka</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Suresh Chand</td>
+        						<td>Sambhal</td>
+        						<td>AT, PS Khanpur</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Sanjay Kuma Dwivedi</td>
+        						<td>Sant Kabir Nagar</td>
+        						<td>HT, PS Bajhara</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Mamta Shukla</td>
+        						<td>Shahjahanpur</td>
+        						<td>AT, UPS Puwaya-1</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Arun Kumar Gupta</td>
+        						<td>Shahjahanpur</td>
+        						<td>AT, UPS Nizampur Gautiya, Dadroul</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Aswani Kumar Awasthi</td>
+        						<td>Shahjahanpur</td>
+        						<td>AT, UPS Puwaya</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Sachin Kumar</td>
+        						<td>Shamli</td>
+        						<td>HT, PS Ghissugarh</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Sunil Kumar</td>
+        						<td>Shamli</td>
+        						<td>ABRC, OON</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Praveen Kumar Sharma</td>
+        						<td>Shamli</td>
+        						<td>AT, UPS Jandhedi</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Prashant Mishra</td>
+        						<td>Shrawasti</td>
+        						<td>AT, UPS Gajobari</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Santkumar</td>
+        						<td>Shrawasti</td>
+        						<td>HT, PS Jaichandpur Katghara</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Nandkumar Pathak</td>
+        						<td>Shrawasti</td>
+        						<td>HT, UPS Buthar</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Anshuman Singh</td>
+        						<td>Siddharthnagar</td>
+        						<td>AT, UPS Jogiya</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Apurva Kumar Srivastav</td>
+        						<td>Siddharthnagar</td>
+        						<td>AT, UPS Siktihva</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Alok Srivastav</td>
+        						<td>Sitapur</td>
+        						<td>HT, PS Malihabad</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Madnesh Mishra</td>
+        						<td>Sitapur</td>
+        						<td>AT, UPS Goniya Khurd</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Karunesh Kumar Mishra</td>
+        						<td>Sitapur</td>
+        						<td>AT, UPS Sarfapur</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Sanjay Mishra</td>
+        						<td>Sonbhadra</td>
+        						<td>HT, UPS Bharawali</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Vidya Sagar</td>
+        						<td>Sonbhadra</td>
+        						<td>HT, UPS Bardiya</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Sunil Kumar Singh</td>
+        						<td>Sultanpur</td>
+        						<td>HT, PS Deien, Dubepur</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Satyadev Pandey</td>
+        						<td>Sultanpur</td>
+        						<td>ABRC, BRC Dhanpatganj</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Mussarrat Fatima</td>
+        						<td>Unnao</td>
+        						<td>AT, UPS Bnanpur</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Dr. Rachna Singh</td>
+        						<td>Unnao</td>
+        						<td>HT, PS Katri Peeperkhera</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Akhilesh Chandra Shukla</td>
+        						<td>Unnao</td>
+        						<td>HT, UPS Hindukheda</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Akhilesh Kumar Prasad</td>
+        						<td>Varanasi</td>
+        						<td>ABRC, URC Nagarkshetra</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Rajeev Kumar Singh</td>
+        						<td>Varanasi</td>
+        						<td>ABRC, BRC Chirayigaon</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
+        					<tr>
+        						<td>Chavi Agrawal</td>
+        						<td>Varanasi</td>
+        						<td>AT, PS Banpurva</td>
+        						<td>987654321</td>
+        						<td></td>
+        						<td>UP SRG 2019</td>
+        					</tr>
   			</tbody>
   		</table>
-
   	</div>
 
-    <p id="bottom-text"> Last Modified: 14 October 2019, 01:55 PM </p>
+    <p id="bottom-text"> Last Modified:
+        <script type="text/javascript">
+          document.write(new Date().getDate() + "/" + new Date().getMonth() + "/" + new Date().getFullYear() +
+                          ", " + new Date().getHours() + ":" + new Date().getMinutes());</script>
+    </p>
 
   </div>
 </div>

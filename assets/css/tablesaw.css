@@ -341,7 +341,8 @@ a.tablesaw-btn {
 }
 
 .tablesaw-swipe .tablesaw-swipe-cellpersist {
-  border-right: 2px solid #e4e1de;
+  border-right: 2px dashed #e4e1de;
+  text-align: left;
 }
 
 .tablesaw-swipe-shadow .tablesaw-swipe-cellpersist {
@@ -620,4 +621,8 @@ a.tablesaw-btn {
   opacity: .25;
   cursor: default;
   pointer-events: none;
+}
+
+td {
+  border-bottom: 2px dotted #e4e1de
 }

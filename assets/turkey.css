@@ -103,7 +103,7 @@ a:hover {
   transition: all 0.3s;
 }
 .profile-card__name {
-  font-weight: 900;
+  font-weight: 700;
   font-size: 36px;
   color: #6944ff;
   margin-bottom: 15px;
@@ -164,9 +164,9 @@ a:hover {
 }
 .profile-card-social__item {
   display: inline-flex;
-  width: 55px;
-  height: 55px;
-  margin: 15px;
+  width: 85px;
+  height: 85px;
+  margin: 20px;
   border-radius: 50%;
   align-items: center;
   justify-content: center;
@@ -180,9 +180,9 @@ a:hover {
 }
 @media screen and (max-width: 768px) {
   .profile-card-social__item {
-    width: 50px;
-    height: 50px;
-    margin: 10px;
+    width: 85px;
+    height: 85px;
+    margin: 20px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -224,7 +224,6 @@ a:hover {
 .profile-card-ctr {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
   align-items: center;
   margin-top: 40px;
 }
@@ -262,6 +261,9 @@ a:hover {
     margin-bottom: 16px;
     width: 100%;
     max-width: 300px;
+  }
+  .profile-card__button:last-child {
+    margin-bottom: 0;
   }
 }
 .profile-card__button:focus {
